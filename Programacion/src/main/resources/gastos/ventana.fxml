@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.VentanaController"
+      style="-fx-padding: 25; -fx-background-color: #f0f3f4;">
+
+    <Label fx:id="lblFecha" styleClass="label-fecha"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <VBox fx:id="boxIngresos" spacing="5" alignment="CENTER" prefWidth="200" styleClass="box-ingresos" style="-fx-padding: 15;">
+            <Label text="INGRESOS DEL MES" styleClass="label-titulo-caja"/>
+            <Label fx:id="lblIngresosValor" text="0.00 EUR" styleClass="label-valor"/>
+        </VBox>
+        <VBox fx:id="boxGastos" spacing="5" alignment="CENTER" prefWidth="200" styleClass="box-gastos" style="-fx-padding: 15;">
+            <Label text="GASTOS DEL MES" styleClass="label-titulo-caja"/>
+            <Label fx:id="lblGastosValor" text="0.00 EUR" styleClass="label-valor"/>
+        </VBox>
+        <VBox fx:id="boxAhorros" spacing="5" alignment="CENTER" prefWidth="200" styleClass="box-ahorros-positivo" style="-fx-padding: 15;">
+            <Label text="AHORROS DEL MES" styleClass="label-titulo-caja"/>
+            <Label fx:id="lblAhorrosValor" text="0.00 EUR" styleClass="label-valor"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10">
+        <Button fx:id="btnAnadir" text="Anadir gasto" styleClass="boton-verde" onAction="#anadirGasto"/>
+        <Button fx:id="btnFijo" text="Anadir gasto fijo" styleClass="boton-morado" onAction="#anadirGastoFijo"/>
+        <Button fx:id="btnIngreso" text="Anadir ingreso" styleClass="boton-naranja" onAction="#anadirIngreso"/>
+        <Button fx:id="btnEliminar" text="Eliminar seleccionado" styleClass="boton-rojo" onAction="#eliminarSeleccionado"/>
+    </HBox>
+
+    <HBox spacing="15">
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Ingresos" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #3498db;"/>
+            <ListView fx:id="listaIngresos" prefHeight="150"/>
+        </VBox>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Gastos" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+            <ListView fx:id="listaGastos" prefHeight="150"/>
+        </VBox>
+    </HBox>
+
+    <Label fx:id="lblResultado" style="-fx-font-size: 13px;"/>
+
+</VBox>

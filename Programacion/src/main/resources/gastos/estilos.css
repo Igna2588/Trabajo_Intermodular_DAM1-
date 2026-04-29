@@ -1,0 +1,87 @@
+.root {
+    -fx-background-color: #f0f3f4;
+    -fx-font-family: Arial;
+}
+
+.box-ingresos {
+    -fx-background-color: #3498db;
+    -fx-background-radius: 10;
+}
+
+.box-gastos {
+    -fx-background-color: #e74c3c;
+    -fx-background-radius: 10;
+}
+
+.box-ahorros-positivo {
+    -fx-background-color: #2ecc71;
+    -fx-background-radius: 10;
+}
+
+.box-ahorros-negativo {
+    -fx-background-color: #e74c3c;
+    -fx-background-radius: 10;
+}
+
+.label-titulo-lista {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.label-fecha {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #7f8c8d;
+}
+
+.label-blanco {
+    -fx-text-fill: white;
+}
+
+.label-valor {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.label-titulo-caja {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.boton-verde {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+}
+
+.boton-morado {
+    -fx-background-color: #9b59b6;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+}
+
+.boton-naranja {
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+}
+
+.boton-rojo {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+}
