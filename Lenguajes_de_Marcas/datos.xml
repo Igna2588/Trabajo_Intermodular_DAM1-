@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gastos_familiares xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="esquema.xsd">
+
+    <miembros>
+        <miembro id="1">
+            <nombre>Carlos</nombre>
+            <apellido>Arroyo</apellido>
+            <rol>adulto</rol>
+            <email>carlos@gmail.com</email>
+        </miembro>
+        <miembro id="2">
+            <nombre>Laura</nombre>
+            <apellido>Poza</apellido>
+            <rol>adulto</rol>
+            <email>laura@gmail.com</email>
+        </miembro>
+        <miembro id="3">
+            <nombre>Ignacio</nombre>
+            <apellido>Arroyo</apellido>
+            <rol>adulto</rol>
+            <email>ignacio@gmail.com</email>
+        </miembro>
+    </miembros>
+
+    <movimientos>
+        <movimiento id="1">
+            <id_miembro>1</id_miembro>
+            <categoria>Vivienda</categoria>
+            <subcategoria>Alquiler</subcategoria>
+            <importe>750.00</importe>
+            <fecha>2025-03-01</fecha>
+            <descripcion>Alquiler marzo</descripcion>
+        </movimiento>
+        <movimiento id="2">
+            <id_miembro>2</id_miembro>
+            <categoria>Alimentacion</categoria>
+            <subcategoria>Compra supermercado</subcategoria>
+            <importe>320.50</importe>
+            <fecha>2025-03-10</fecha>
+            <descripcion>Compra Mercadona</descripcion>
+        </movimiento>
+        <movimiento id="3">
+            <id_miembro>3</id_miembro>
+            <categoria>Suscripciones</categoria>
+            <subcategoria>PS5 - PS Plus</subcategoria>
+            <importe>9.99</importe>
+            <fecha>2025-03-15</fecha>
+            <descripcion>PS Plus mensual</descripcion>
+        </movimiento>
+        <movimiento id="4">
+            <id_miembro>1</id_miembro>
+            <categoria>Ingresos</categoria>
+            <subcategoria>Nomina</subcategoria>
+            <importe>2200.00</importe>
+            <fecha>2025-03-05</fecha>
+            <descripcion>Nomina Carlos marzo</descripcion>
+        </movimiento>
+    </movimientos>
+
+</gastos_familiares>
