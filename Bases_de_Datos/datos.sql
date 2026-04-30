@@ -1,5 +1,5 @@
 INSERT INTO miembro (nombre, apellido, rol, email) VALUES
-('Carlos', 'Arroyo', 'adulto', 'carlos@gmail.com'),
+('Carlos', 'Garcia', 'adulto', 'carlos@gmail.com'),
 ('Laura', 'Poza', 'adulto', 'laura@gmail.com'),
 ('Ignacio', 'Arroyo', 'adulto', 'ignacio@gmail.com');
 
