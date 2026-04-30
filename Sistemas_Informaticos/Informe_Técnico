@@ -1,0 +1,63 @@
+Informe Técnico del Entorno de Ejecución
+Aplicación de Gestión de Gastos Familiares
+Autor: Ignacio Arroyo
+
+1. Tipo de sistema
+
+La aplicación se ejecuta en un PC de usuario doméstico.
+
+Se ha elegido este tipo de sistema porque la aplicación está pensada para que 
+cualquier miembro de la familia pueda usarla desde casa, sin necesidad 
+de servidores ni infraestructura especial.
+
+2. Requisitos de hardware
+
+Componente; Mínimo; Recomendado
+
+CPU: Intel Core i3, Intel Core i5 o superior
+RAM: 4 GB, 8 GB
+Almacenamiento: 500 MB libres, 1 GB libres
+Pantalla: 1280x720, 1920x1080
+
+3. Sistema operativo
+
+SO recomendado: Windows 10 o Windows 11
+También compatible: Linux Ubuntu 20.04 o superior
+
+Se recomienda Windows porque es el sistema más usado en hogares 
+españoles y donde se ha desarrollado y probado la aplicación.
+
+
+4. Instalación del entorno
+
+Pasos para poner en marcha la aplicación:
+
+1. Instalar Java 17 o superior
+2. Instalar XAMPP para tener MySQL disponible
+3. Abrir phpMyAdmin y ejecutar el archivo schema.sql
+4. Ejecutar el archivo datos.sql para cargar los datos de ejemplo
+5. Abrir el proyecto en IntelliJ IDEA
+6. Configurar las VM options con la ruta de JavaFX
+7. Ejecutar la clase Main.java
+
+
+5. Usuarios y permisos
+
+Usuario: Permisos
+Administrador: Acceso total a la aplicación
+Usuario: Puede registrar y consultar movimientos
+
+Los datos se guardan en la base de datos MySQL local.
+Las copias de seguridad se guardan exportando la base de datos desde phpMyAdmin.
+
+6. Mantenimiento
+
+Actualizar Java cada 6 meses
+Hacer copia de seguridad de la base de datos una vez al mes
+Si la aplicación no arranca, comprobar que XAMPP está iniciado
+Si hay errores en la base de datos, volver a ejecutar schema.sql
+
+7. Evidencias
+
+La aplicación se ha probado en Windows 11 con Java 24 y JavaFX 26.
+Ver capturas de funcionamiento en esta misma carpeta.
